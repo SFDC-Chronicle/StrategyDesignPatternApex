@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Payment Method">
+        <div class="slds-m-top_medium slds-m-bottom_medium slds-m-horizontal_medium">
+            <lightning-combobox
+                name="paymentMethod"
+                label="Payment Method"
+                value={paymentMethod}
+                placeholder="Select Payment Method"
+                options={options}
+                onchange={handleChange} ></lightning-combobox>
+            <p>Response: {response}</p>
+        </div>
+    </lightning-card>
+    
+</template>
